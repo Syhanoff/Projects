@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  line-height: 1.5;
+  @include adaptiv-font(30,24);
+  font-weight: 700;
+  color: var(--txt-accent);
+  font-family: 'PlayfairDisplay', sans-serif;
+}
+
+.subtitle {
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--txt-accent);
+  @include adaptiv-font(24,18);
+}

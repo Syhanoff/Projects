@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+}
+
+// html::-webkit-scrollbar {
+//   width: 0;
+//   height: 0;
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+// aside,
+// footer,
+// header,
+// nav {
+//   display: block;
+// }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-txt);
+  background: var(--color-main);
+  // overflow-y: scroll;
+  // overflow-x: hidden;
+  // text-rendering: optimizeLegibility;
+}
+
+ul li {
+  list-style: none;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a, a:visited, a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+  // color: inherit;
+  // background: transparent;
+  // text-decoration-skip: objects;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button, button:hover, button:focus {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus {
+//   -webkit-text-fill-color: var(--color-background-text);
+//   transition: background-color 5000s ease-in-out 0s;
+// }
+
+// h1, h2, h3, h4, h5, h6 {
+// }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// svg {
+//   fill: currentColor;
+// }
+
