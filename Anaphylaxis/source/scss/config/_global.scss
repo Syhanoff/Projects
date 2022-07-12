@@ -37,7 +37,7 @@ body {
   color: var(--color-txt);
   background: var(--color-main);
   // overflow-y: scroll;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   // text-rendering: optimizeLegibility;
 }
 
@@ -58,7 +58,7 @@ a, a:visited, a:hover, a:focus, a:active {
 }
 
 img {
-  height: auto;
+  height: 100%;
   max-width: 100%;
   object-fit: cover;
 }

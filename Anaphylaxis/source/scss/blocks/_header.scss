@@ -1,5 +1,9 @@
 .header {
   background: var(--color-main);
+  z-index: 10;
+  position: relative;
+  // position: fixed;
+  // top: 0;
   &__slogan {
     text-align: left;
   }
@@ -24,7 +28,6 @@
   align-items: center;
   border-bottom: 1px solid var(--color-third);
 }
-
 .nav {
   &__list {
     display: flex;
@@ -44,11 +47,9 @@
     transition: var(--transition-base);
     white-space: nowrap;
 
-
-
-    // overflow: hidden;
     &:hover {
       color: var(--color-txt-accent);
+      text-shadow: 1px 1px 1px var(--color-txt-accent);
     }
     &::before {
       content: '';
@@ -58,8 +59,8 @@
       bottom: -7px;
       width: 100%;
       display: block;
-      height: 2px;
-      background: var(--color-txt-accent);
+      height: 1px;
+      background: var(--color-third);
       transform:  scaleX(0);
     }
     &:hover::before {

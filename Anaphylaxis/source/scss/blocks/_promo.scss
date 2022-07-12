@@ -1,3 +1,93 @@
-// .promo {
-
-// }
+.promo {
+  background: var(--color-second);
+  padding: 113px 0 100px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -45px;
+    width: 45%;
+    height: 150%;
+    background: url('@img/pattern_left.svg') no-repeat ;
+    z-index: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: -90px;
+    width: 45%;
+    height: 150%;
+    background: url('@img/pattern_right.svg') no-repeat ;
+    z-index: 0;
+  }
+  &__offer {
+    background: var(--color-main);
+    padding: 38px 95px 0;
+    max-width: 1122px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #D9D9D9;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: inherit;
+    position: relative;
+    z-index: 1;
+  }
+  &__desc {
+    margin-top: 38px;
+    max-width: 923px;
+    width: 100%;
+    font-size: 36px;
+    font-weight: inherit;
+  }
+  &__title {
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: inherit;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -70px;
+  }
+  &__inner-doc {
+    position: relative;
+  }
+  &__inner-patient {
+    position: relative;
+  }
+  &__img-doc {
+    max-width: 245px;
+    width: 100%;
+  }
+  &__btn {
+    position: absolute;
+    bottom: 51px;
+   &_doc {
+    transition: var(--transition-base);
+    left: 60%;
+    &::after {
+      background: linear-gradient(284.58deg, #00575E -4.84%, rgba(0, 86, 94, 0.2) 104.35%);
+    }
+   }
+   &_patient {
+    transition: var(--transition-base);
+    left: -60%;
+    &::after {
+      background: linear-gradient(104.29deg, #00575E -4.47%, rgba(0, 86, 94, 0.2) 100%);
+    }
+   }
+  }
+  &__img-patient {
+    max-width: 245px;
+    width: 100%;
+  }
+}
