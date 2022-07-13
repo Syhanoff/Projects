@@ -1,0 +1,45 @@
+.list {
+  background: var(--color-second);
+  padding: 90px 0 100px;
+  &__title {}
+  &__items {
+    margin: 55px auto 0;
+    display: block;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    &:first-child {
+      margin-top: unset;
+    }
+  }
+  &__img {
+    margin: 0 10px 25px 0;
+  }
+  &__txt {
+    max-width: 620px;
+    width: 100%;
+    align-self: flex-end;
+  }
+  &__box {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__inner-doc {}
+  &__btn {
+   &_doc {}
+   &_patient {}
+  }
+  &__inner-patient {}
+}
+.container {
+}
+.title {
+}
+.decorline {
+}
+.btn-glass {
+}

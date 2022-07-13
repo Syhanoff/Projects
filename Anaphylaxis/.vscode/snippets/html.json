@@ -155,5 +155,16 @@
       "</div>"
     ],
     "description": "Snippet for basic tabs structure"
+  },
+  "new section": {
+    "prefix": "s-section",
+    "body": [
+      "<section class=\"$1\" id=\"&1\">",
+      "  <div class=\"container\">",
+      "    $2",
+      "  </div>",
+      "</section>"
+    ],
+    "description": "Snippet for new section"
   }
 }

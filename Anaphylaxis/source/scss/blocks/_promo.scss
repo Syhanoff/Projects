@@ -2,6 +2,7 @@
   background: var(--color-second);
   padding: 113px 0 100px;
   position: relative;
+  overflow: hidden;
   &::before {
     content: '';
     position: absolute;
@@ -9,7 +10,7 @@
     left: -45px;
     width: 45%;
     height: 150%;
-    background: url('@img/pattern_left.svg') no-repeat ;
+    background: url('@img/promo_pattern_left.svg') no-repeat ;
     z-index: 0;
   }
   &::after {
@@ -19,7 +20,7 @@
     right: -90px;
     width: 45%;
     height: 150%;
-    background: url('@img/pattern_right.svg') no-repeat ;
+    background: url('@img/promo_pattern_right.svg') no-repeat ;
     z-index: 0;
   }
   &__offer {
