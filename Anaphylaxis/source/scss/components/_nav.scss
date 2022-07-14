@@ -1,0 +1,27 @@
+.nav {
+  &__link {
+    font-size: 16px;
+    position: relative;
+    transition: var(--transition-base);
+    white-space: nowrap;
+    &:hover {
+      color: var(--color-txt-accent);
+      text-shadow: 1px 1px 1px var(--color-txt-accent);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      transition: var(--transition-base);
+      left: 0;
+      bottom: -7px;
+      width: 100%;
+      display: block;
+      height: 1px;
+      background: var(--color-third);
+      transform:  scaleX(0);
+    }
+    &:hover::before {
+      transform:  scaleX(1);
+    }
+  }
+}

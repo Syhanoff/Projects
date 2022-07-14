@@ -1,3 +1,109 @@
 .footer {
-  
+  padding: 100px 0;
+  background: var(--color-third);
+  color: var(--color-main);
+  font-size: 16px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inner{
+    max-width: 300px;
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-fourth);
+  }
+  &__logo {
+    width: 75px;
+    height: 75px;
+    display: block;
+  }
+  &__txt {
+    margin-top: 20px;
+  }
+  &__policy {
+    margin-top: 40px;
+    color: var(--color-fourth);
+    max-width: 180px;
+    width: 100%;
+    display: block;
+    text-decoration-line: underline;
+    transition: var(--transition-base);
+    font-size: 14px;
+    &:hover {
+      color: var(--color-main);
+    }
+  }
+  &__contact {
+    padding-right: 50px;
+  }
+  &__btn {
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    border: 1px solid var(--color-main);
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--color-main);
+    transition: var(--transition-base);
+    &:hover {
+      border: 1px solid var(--color-txt-accent);
+      color: var(--color-txt-accent);
+    }
+    &_link {
+      margin-bottom: 0;
+      background: var(--color-txt-accent);
+      border: 1px solid var(--color-txt-accent);
+      &:hover {
+        border: 1px solid var(--color-txt-accent);
+        background: transparent;
+        color: var(--color-txt-accent);
+      }
+    }
+  }
+  &__social {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    border-left: 1px solid var(--color-fourth);
+    border-right: 1px solid var(--color-fourth);
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 1px;
+      background: var(--color-fourth);
+      z-index: 3;
+      display: block;
+    }
+  }
+  &__link {
+    color: var(--color-fourth);
+    transition: var(--transition-base);
+    margin: 0 auto;
+    text-decoration-line: underline;
+    &:hover {
+      color: var(--color-main);
+      text-decoration-line: none;
+    }
+  }
 }
+.footer-nav {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__link {
+    color: var(--color-main);
+      &:hover.nav__link::before {
+        background: var(--color-txt-accent);
+    }
+  }
+}
+

@@ -2,8 +2,6 @@
   background: var(--color-main);
   z-index: 10;
   position: relative;
-  // position: fixed;
-  // top: 0;
   &__slogan {
     text-align: left;
   }
@@ -15,10 +13,31 @@
     color: var(--color-third);
     font-size: 18px;
   }
-  &__btn {
-  }
   &__nav {
     padding: 22px 0;
+  }
+  &-nav {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+    &__item {
+      padding: 0 20px 0 19px;
+      border-left: 1px solid var(--color-third);
+      margin: auto 0;
+    }
+    &__item:last-child {
+      border-right: 1px solid var(--color-third);
+    }
+    &__link {
+      color: inherit;
+    }
+    &__search {
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: url('@img/search.svg') no-repeat center top / cover;
+    }
   }
 }
 .subheader {
@@ -28,49 +47,4 @@
   align-items: center;
   border-bottom: 1px solid var(--color-third);
 }
-.nav {
-  &__list {
-    display: flex;
-    justify-content: center;
-  }
-  &__item {
-    padding: 0 20px 0 19px;
-    border-left: 1px solid var(--color-third);
-    margin: auto 0;
-  }
-  &__item:last-child {
-    border-right: 1px solid var(--color-third);
-  }
-  &__link {
-    font-size: 16px;
-    position: relative;
-    transition: var(--transition-base);
-    white-space: nowrap;
 
-    &:hover {
-      color: var(--color-txt-accent);
-      text-shadow: 1px 1px 1px var(--color-txt-accent);
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      transition: var(--transition-base);
-      left: 0;
-      bottom: -7px;
-      width: 100%;
-      display: block;
-      height: 1px;
-      background: var(--color-third);
-      transform:  scaleX(0);
-    }
-    &:hover::before {
-      transform:  scaleX(1);
-    }
-  }
-  &__search {
-    width: 30px;
-    height: 30px;
-    display: block;
-    background: url('@img/search.svg') no-repeat center top / cover;
-  }
-}

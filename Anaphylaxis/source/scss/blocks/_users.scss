@@ -1,38 +1,37 @@
 .users {
-  background: var(--color-second);
+  background: var(--color-second) url('@img/bg_arrow.jpg') no-repeat top / cover;
   position: relative;
-  width: 100%;
-  padding: 79px 0 182px;
+  padding: 100px 0 200px;
   &::before {
     content: '';
     position: absolute;
-    top: -27%;
-    left: -45px;
-    width: 45%;
+    top: -20%;
+    left: 0;
+    width: 30%;
     height: 150%;
-    background: url('@img/users_pattern_left.svg') no-repeat ;
+    background: url('@img/users_pattern_left.svg') no-repeat top left / contain;
     z-index: 0;
   }
   &::after {
     content: '';
     position: absolute;
-    top: -47%;
-    right: -90px;
-    width: 45%;
+    top: -32%;
+    right: 0;
+    width: 30%;
     height: 150%;
-    background: url('@img/users_pattern_right.svg') no-repeat ;
+    background: url('@img/users_pattern_right.svg') no-repeat top right / contain;
     z-index: 0;
   }
 }
 .user {
   &__target {
-    max-width: 639px;
+    max-width: 640px;
     width: 100%;
-    padding: 21px 0 22px;
-    margin: 63px auto 0;
+    padding: 20px 0;
+    margin: 60px auto 0;
     background: var(--color-main);
     border-radius: 15px;
-    border: 1px solid var(--color-main);
+    // border: 1px solid var(--color-main);
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.1);
   }
   &__target-txt {
@@ -44,7 +43,7 @@
   }
   &__box {
     border-top: 1px solid var(--color-main);
-    margin-top: 41px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-around;
   }
