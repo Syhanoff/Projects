@@ -1,6 +1,6 @@
 .promo {
   background: var(--color-second);
-  padding: 100px 0;
+  padding: clamp(40px, 7vw, 100px) 0;
   position: relative;
   &::before {
     content: '';
@@ -43,11 +43,11 @@
     margin-top: 40px;
     max-width: 900px;
     width: 100%;
-    font-size: 36px;
+    @include adaptiv-font(36,18);
     font-weight: inherit;
   }
   &__title {
-    font-size: 30px;
+    @include adaptiv-font(30,14);
     margin-top: 40px;
     font-weight: inherit;
   }

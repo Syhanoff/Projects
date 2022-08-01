@@ -1,6 +1,7 @@
 .desk {
-  padding: 100px 0;
+  padding: clamp(40px, 7vw, 100px) 0;
   position: relative;
+  z-index: 1;
   &::after {
     content: '';
     position: absolute;
@@ -43,6 +44,7 @@
   &__slider {
     margin: 60px auto 0;
     position: relative;
+    z-index: 3;
   }
   &__navigation {
     position: absolute;
@@ -62,8 +64,6 @@
     }
     &_next {
       right: 0;
-    }
-    &-img {
     }
   }
   &__slider-list {

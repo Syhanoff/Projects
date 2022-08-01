@@ -1,5 +1,5 @@
 .tasks {
-  padding: 100px 0;
+  padding: clamp(40px, 7vw, 100px) 0;
   &__desc {
     margin: 65px auto 0;
     max-width: 680px;
@@ -56,20 +56,20 @@
   position: relative;
   &__arrow {
     z-index: 3;
-   &_left {
+    &_left {
     position: absolute;
     top: 50px;
     left: 10px;
     width: 288px;
     height: 181px;
-   }
-   &_right {
+    }
+    &_right {
     position: absolute;
     top: 75px;
     right: -20px;
     width: 309px;
     height: 165px;
-   }
+    }
   }
   &__target {
     position: absolute;

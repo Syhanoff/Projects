@@ -1,5 +1,5 @@
 .problems {
-  padding: 100px 0;
+  padding: clamp(40px, 7vw, 100px) 0;
   background: url('@img/bg_foto.jpg') no-repeat center top / cover;
   &__box {
     margin-top: 65px;

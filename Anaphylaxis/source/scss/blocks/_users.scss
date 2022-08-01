@@ -1,7 +1,7 @@
 .users {
   background: var(--color-second) url('@img/bg_arrow.jpg') no-repeat top / cover;
   position: relative;
-  padding: 100px 0 200px;
+  padding: clamp(40px, 7vw, 100px) 0 clamp(50px, 7vw, 200px);
   &::before {
     content: '';
     position: absolute;

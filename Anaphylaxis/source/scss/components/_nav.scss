@@ -1,6 +1,6 @@
 .nav {
   &__link {
-    font-size: 16px;
+    @include adaptiv-font(16,14);
     position: relative;
     transition: var(--transition-base);
     white-space: nowrap;
