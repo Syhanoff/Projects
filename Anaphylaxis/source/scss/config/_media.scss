@@ -10,12 +10,140 @@
   .container {
     max-width: 960px;
   }
+  .header-nav {
+    &__item {
+      padding: 0 10px;
+    }
+  }
+  .promo__btn {
+    &_doc {
+      left: 30%;
+    }
+    &_patient {
+      left: -30%;
+    }
+  }
+  .target {
+    &__title {
+      margin-top: 70px;
+    }
+    &__txt {
+      margin-top: 20px;
+    }
+  }
+  .user {
+    &__inner {
+    max-width: 400px;
+    }
+    &__subtitle {
+      &_alignment {
+        padding-left: 80px;
+      }
+    }
+  }
+  .tasks__fact {
+    max-width: 400px;
+    padding: 45px 20px;
+  }
+
 }
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
   .container {
     max-width: 750px;
+  }
+  .header-nav__item {
+    padding: 0 10px;
+    &:last-child {
+      display: none;
+    }
+    &:first-child {
+      border-left: 1px solid var(--color-main);
+    }
+  }
+  .promo {
+    &__offer {
+      padding: 40px 25px 0;
+    }
+    &__inner {
+      max-width: 210px;
+    }
+  }
+  .btn-glass {
+    max-width: 215px;
+    padding: 20px 0;
+  }
+  .target {
+    &__box {
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+    &__txt {
+      margin-bottom: 100px;
+    }
+    &__content {
+      margin-bottom: 40px;
+    }
+  }
+  .problems {
+    &__box {
+      height: 980px;
+    }
+    &__content {
+    max-width: 320px;
+    max-height: 210px;
+    padding: 30px;
+    &_2 {
+      top: 20%;
+      left: 15%;
+      }
+    &_3 {
+      bottom: calc(50% - 105px);
+      right: calc(50% - 162px);
+      }
+    &_4 {
+      bottom: 20%;
+      right: 15%;
+      }
+    }
+  }
+  .user {
+    &__inner {
+    max-width: 330px;
+    padding: 30px;
+    }
+    &__header {
+      flex-direction: column;
+    }
+    &__subtitle {
+      margin: 30px 0 0;
+      &_alignment {
+        padding-left: unset;
+      }
+    }
+    &__txt {
+      text-align: center;
+    }
+  }
+  .tasks__fact {
+    max-width: 330px;
+    padding: 30px 35px;
+    &-txt {
+      text-align: center;
+    }
+  }
+  .list__txt {
+    max-width: 520px;
+  }
+  .footer {
+    &__wrapper {
+    flex-wrap: wrap-reverse;
+    }
+    &__contact {
+      margin: 0 auto 40px;
+      padding: 30px 0 0 0;
+    }
   }
 }
 
@@ -24,8 +152,26 @@
   .container {
 		max-width: 540px;
 	}
+  .buttonup {
+    bottom: 45px;
+    right: 30px;
+  }
+  .burger {
+    display: block;
+  }
+  .header {
+    &__nav {
+    display: none;
+    }
+    &__btn {
+      display: none;
+    }
+  }
 }
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
 }

@@ -50,6 +50,9 @@
       border: 1px solid var(--color-txt-accent);
       color: var(--color-txt-accent);
     }
+    &_mob {
+      display: none;
+    }
     &_link {
       margin-bottom: 0;
       background: var(--color-txt-accent);
