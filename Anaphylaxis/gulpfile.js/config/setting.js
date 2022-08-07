@@ -18,7 +18,7 @@ module.exports = {
       'key' : '_v',
       'cover' : 0,
       'to' : [
-          // 'css',
+          'css',
           // 'js',
       ]
     },
