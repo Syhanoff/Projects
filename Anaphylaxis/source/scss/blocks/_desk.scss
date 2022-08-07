@@ -41,6 +41,9 @@
   &__btn {
     &_mob {
       display: none;
+      &-2 {
+        display: none;
+      }
     }
   }
 }

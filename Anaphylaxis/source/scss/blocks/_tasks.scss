@@ -69,6 +69,9 @@
     right: -20px;
     width: 309px;
     height: 165px;
+    &_mob {
+      display: none;
+    }
     }
   }
   &__target {
@@ -79,5 +82,8 @@
     width: 137px;
     height: 137px;
     z-index: 2;
+    &-mob {
+      display: none;
+    }
   }
 }
