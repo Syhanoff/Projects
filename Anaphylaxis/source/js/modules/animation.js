@@ -11,6 +11,9 @@ function animateFrom(elem, direction) {
   } else if (elem.classList.contains("reveal-in-right")) {
     x = 150;
     y = 0;
+  } else if (elem.classList.contains("zoom-in")) {
+    x = 0;
+    y = 0;
   }
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
   elem.style.opacity = "0";

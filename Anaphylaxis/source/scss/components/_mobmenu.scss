@@ -33,8 +33,8 @@
       position: absolute;
       top: 50%;
       right: 0;
-      width: 80%;
-      height: 70%;
+      width: 100%;
+      height: 100%;
       background: url('@img/pattern_mob.svg') no-repeat top right / contain;
       z-index: 0;
       transform: translateY(-50%);
@@ -51,11 +51,12 @@
     color: var(--color-background-text);
     display: inline-block;
     overflow: hidden;
+    z-index: 1;
     &:after {
       content: '';
       position: absolute;
       transition: var(--transition-base);
-      left: 30px;
+      left: 0px;
       bottom: 0;
       width: 35px;
       height: 1px;

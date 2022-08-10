@@ -1,19 +1,51 @@
 import Swiper from 'swiper/bundle';
-// import 'swiper/css/bundle';
+
+
 
 const swiper = new Swiper('.partners__slider', {
-  slidesPerView: 3,
-  // centeredSlides: true,
-  spaceBetween: 50,
-  // watchOverflow: true,
-  loop: true,
-  // stopOnLastSlide : false,
-	// speed : 500,
-	// autoplay: {
-		// delay: 3000,
-	// },
   navigation: {
-    nextEl: ".partners__navigation_next",
-    prevEl: ".partners__navigation_prev"
-  }
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  //   draggable: true,
+  // },
+  simulateTouch: true,
+  touchRatio: 1,
+  touchAngle: 45,
+  grabCursor: true,
+  hashNavigation: {
+    watchState: true
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+		pageUpDown: true
+  },
+  slidesPerView: 'auto',
+  watchOverflow: true,
+  spaceBetween : 50,
+  slidesPerGroup: 1,
+  centeredSlides: true,
+  speed : 800,
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    577: {
+      slidesPerView: 'auto',
+      spaceBetween: 30
+    },
+    992: {
+      slidesPerView: 'auto',
+      spaceBetween: 50
+    }
+  },
 });
