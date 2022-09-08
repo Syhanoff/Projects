@@ -12,10 +12,6 @@ const swiper = new Swiper('.partners__slider', {
     clickable: true,
     dynamicBullets: true
   },
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  //   draggable: true,
-  // },
   simulateTouch: true,
   touchRatio: 1,
   touchAngle: 45,
@@ -32,7 +28,7 @@ const swiper = new Swiper('.partners__slider', {
   watchOverflow: true,
   spaceBetween : 50,
   slidesPerGroup: 1,
-  centeredSlides: true,
+  // centeredSlides: true,
   speed : 800,
   breakpoints: {
     320: {

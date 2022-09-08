@@ -79,7 +79,7 @@ module.exports = {
   renameFav: {
     basename: "favicon"
   },
-  favicon: {
+  favicons: {
     icons: {
       favicons: true,
       appleIcon: true,

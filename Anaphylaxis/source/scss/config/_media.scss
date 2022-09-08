@@ -513,6 +513,11 @@
       margin: 40px auto 0;
     }
   }
+  .cookie {
+    &__box {
+      width: 95%;
+    }
+  }
 }
 
 /* Extra small: 0px (320px) - 575px */
@@ -659,6 +664,12 @@
     }
     &-nav__item:not(:last-child) {
       margin-bottom: 5px;
+    }
+  }
+  .cookie {
+    &__box {
+      width: 100%;
+      flex-direction: column;
     }
   }
 }

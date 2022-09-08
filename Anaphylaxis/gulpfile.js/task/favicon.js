@@ -25,7 +25,7 @@ const faviconTask = () => {
     ))
     .pipe(rename(setting.renameFav))
     .pipe(dest(route.favicon.dest))
-    .pipe(favicons(setting.favicon))
+    .pipe(favicons(setting.favicons))
     .pipe(dest(route.favicon.dest))
     .pipe(filter([
       'favicon.ico'

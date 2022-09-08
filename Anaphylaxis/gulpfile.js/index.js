@@ -79,4 +79,4 @@ exports.default = setting.isProd ? build : dev;
 exports.deployZip = series(build, zip);
 exports.deployFtp = series(build, ftp);
 // exports.buildCritical = series(build, criticalCSS);
-// exports.duildFavicon = series(build, favicon);
+exports.buildFavicon = series(build, favicon);

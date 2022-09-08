@@ -29,7 +29,8 @@ const imgTask = () => {
     .pipe(dest(route.img.dest))
     .pipe(src(route.img.src))
     .pipe(changed(route.img.dest))
-    .pipe(gulpif(setting.isProd, imagemin(setting.imagemin)))
+    // .pipe(gulpif(setting.isProd, imagemin(setting.imagemin)))
+    .pipe(imagemin(setting.imagemin))
     .pipe(dest(route.img.dest))
 }
 

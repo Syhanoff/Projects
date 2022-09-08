@@ -53,6 +53,9 @@
     margin-top: 60px;
     padding: 0 50px 30px;
     height: 200px;
+    &-list {
+      // justify-content: center;
+    }
     .swiper-button-prev, .swiper-button-next {
       width: 35px;
       height: 35px;
@@ -85,6 +88,9 @@
   }
   &__slide {
     width: 170px;
+    &:last-child {
+      margin-right: 0!important;
+    }
     &-inner {
       height: 100%;
       display: flex;
